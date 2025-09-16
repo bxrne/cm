@@ -17,8 +17,8 @@ A small shell script that helps you write [Conventional Commits](https://www.con
 Run this in your terminal:
 
 ```sh
-curl -fsSL https://github.com/bxrne/cm/blob/c61b62e7ee49ec25d5ad72a82be0e0258de62b78/cm.sh -o ~/.local/bin/cm
-chmod +x ~/.local/bin/cm 
+sudo curl -fsSL 'https://raw.githubusercontent.com/bxrne/cm/c61b62e7ee49ec25d5ad72a82be0e0258de62b78/cm.sh' -o /usr/local/bin/cm
+sudo chmod +x /usr/local/bin/cm
 ```
 
 ```sh
