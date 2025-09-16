@@ -1,0 +1,52 @@
+# 📦 cm — Fancy Conventional Commit Helper
+
+A small shell script that helps you write [Conventional Commits](https://www.conventionalcommits.org/) with a friendly TUI using [gum](https://github.com/charmbracelet/gum).
+
+---
+
+## ✨ Features
+- Choose commit type (`feat`, `fix`, `docs`, etc.)
+- Optional scope (`(server)`, `(api)`, etc.)
+- Guided summary and description prompts
+- Final review and confirmation before committing
+
+---
+
+## 🚀 Install
+
+Run this in your terminal:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/bxrne/cm/main/cm.sh -o ~/.local/bin/cm
+chmod +x ~/.local/bin/cm 
+```
+
+```sh
+export PATH="$HOME/.local/bin:$PATH"
+```
+
+# ⚡ Dependencies
+
+- gum
+
+Install with:
+
+# Arch Linux
+
+```sh 
+sudo pacman -S gum
+```
+
+# macOS (Homebrew)
+
+```
+brew install gum
+```
+
+# 🛠 Usage
+
+From inside a git repo:
+
+```sh 
+cm
+``
