@@ -1,6 +1,6 @@
 # 📦 cm — Fancy Conventional Commit Helper
 
-A small shell script that helps you write [Conventional Commits](https://www.conventionalcommits.org/) with a friendly TUI using [gum](https://github.com/charmbracelet/gum).
+A small shell script that helps you write [Conventional Commits](https://www.conventionalcommits.org/). 
 
 ---
 
@@ -25,23 +25,6 @@ sudo chmod +x /usr/local/bin/cm
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-# ⚡ Dependencies
-
-- gum
-
-Install with:
-
-# Arch Linux
-
-```sh 
-sudo pacman -S gum
-```
-
-# macOS (Homebrew)
-
-```
-brew install gum
-```
 
 # 🛠 Usage
 
