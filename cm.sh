@@ -49,3 +49,6 @@ echo "Sum:     $SUMMARY"
 echo "Desc: $DESCRIPTION"
 gum confirm "Commit?" && git commit -m "$SUMMARY" -m "$DESCRIPTION"
 
+printf "\n"
+section "Push Commit"
+gum confirm "Push to remote?" && git push 
