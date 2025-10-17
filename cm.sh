@@ -37,18 +37,10 @@ SUMMARY=$(gum input \
 # --- Description ---
 DESCRIPTION=$(gum write --placeholder "Tracking latency and req/res bytes")
 
-# --- Confirm ---
-section() {
-    gum style --border normal --margin "1 2" --padding "1 3" \
-        --border-foreground 212 "$1"
-}
-
 printf "\n"
-section "Review Commit"
 echo "Sum:     $SUMMARY"
 echo "Desc: $DESCRIPTION"
 gum confirm "Commit?" && git commit -m "$SUMMARY" -m "$DESCRIPTION"
 
 printf "\n"
-section "Push Commit"
 gum confirm "Push to remote?" && git push 
